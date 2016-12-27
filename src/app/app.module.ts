@@ -3,6 +3,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { RedditPage } from '../pages/reddit/reddit';
+import { DetailsPage } from '../pages/details/details';
 import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -11,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     AboutPage,
     RedditPage,
+    DetailsPage,
     SettingsPage,
     TabsPage
   ],
@@ -22,6 +24,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     AboutPage,
     RedditPage,
+    DetailsPage,
     SettingsPage,
     TabsPage
   ],
