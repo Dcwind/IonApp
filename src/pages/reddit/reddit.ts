@@ -8,13 +8,20 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'reddit.html'
 })
 export class RedditPage {
-
+  items: any;
   constructor(public navCtrl: NavController, private redditService:RedditService) {
 
   }
 
   ngOnInit(){
-    
+    this.getPosts('sports',5);
+  }
+
+  getPosts(category, limit){
+    this.redditService.getPosts(category,limit).subscribe(response => {
+      this.items = response.data.children;
+      console.log(response);
+    })
   }
 
 }
