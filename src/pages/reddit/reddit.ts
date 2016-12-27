@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RedditService } from '../../app/services/reddit.service';
+import { DetailsPage } from '../details/details';
 
 import { NavController } from 'ionic-angular';
 
@@ -21,7 +22,13 @@ export class RedditPage {
     this.redditService.getPosts(category,limit).subscribe(response => {
       this.items = response.data.children;
       console.log(response);
-    })
+    });
+  }
+
+  viewItem(item){
+    this.navCtrl.push(DetailsPage, {
+      item:item
+    });
   }
 
 }
