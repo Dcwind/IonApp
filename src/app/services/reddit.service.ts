@@ -5,5 +5,16 @@ import 'rxjs/Rx';
 @Injectable()
 
 export class RedditServices {
-    
+    http: any;
+    baseUrl: string;
+
+    constructor(http:Http){
+        this.http = http;
+        this.baseUrl = 'https://www.reddit.com/r';
+
+        getposts(){
+            return this.http.get(this.baseUrl+'/'+category+'/top.json?limit='+limit);        }
+
+    }
+
 }
