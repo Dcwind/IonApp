@@ -15,7 +15,7 @@ export class RedditPage {
   }
 
   ngOnInit(){
-    this.getPosts('sports',5);
+    this.getPosts('sports',10);
   }
 
   getPosts(category, limit){
