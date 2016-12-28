@@ -6,16 +6,19 @@ This is an Ionic 2 mobile application that uses the Reddit API to view subreddit
 #### Version
 1.0.0
 
-### Usage
+## Table of Contents
+ - [Getting Started](#getting-started)
+ - [Add Platforms](#add-platforms)
+ - [Run Platforms](#run-platforms)
+ - [Build Android APK File](#build-android-apk-file)
+ 
 
-#### Getting started
+### Getting started
 
-##### Note
-
-Node has to be installed first.
+**Note:** Node has to be installed first. goto https://nodejs.org/en/ to install.
 
 * Open Your CMD or Terminal
-* Clone this repository. git clone https://github.com/Dcwind/IonApp.git
+* Clone this repository.  ( `git clone https://github.com/Dcwind/IonApp.git` )
 * Install the ionic CLI (`npm install -g ionic --v2`)
 * Install the dependencies
 
@@ -31,7 +34,7 @@ To serve in the browser
 ```sh
 $ ionic serve
 ```
-#### To Add Platforms
+#### Add Platforms
 ```sh
 $ cordova platform add android
 $ cordova platform add ios
